@@ -1,0 +1,10 @@
+<div class="container">
+  <div #placeholder class="placeholder"></div>
+  <div #banner class="banner">
+    <ng-container *ngFor="let section of sections">
+      <button [class.active]="section===currentSection" (click)="onButtonClick(section)">
+        {{section}}
+      </button>
+    </ng-container>
+  </div>
+</div>
