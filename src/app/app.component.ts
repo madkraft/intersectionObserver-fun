@@ -8,6 +8,20 @@ import { SectionComponent } from "./section/section.component";
 })
 export class AppComponent {
   currentSection: any;
+  sectionsConf = [
+    {
+      label: 'First',
+      id: 1
+    },
+    {
+      label: 'Second',
+      id: 2
+    },
+    {
+      label: 'Third',
+      id: 3
+    }
+  ];
   @ViewChildren(SectionComponent) sections: any;
 
   onVisibilityChanged(event) {

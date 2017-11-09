@@ -5,21 +5,21 @@
     rem ea, nobis accusamus quisquam nostrum pariatur officia minus veniam itaque nihil sed similique voluptates quaerat
     dicta explicabo quidem in incidunt. Eaque nam doloribus voluptatibus iure tempora, cupiditate expedita.
   </div>
-  <app-banner [sections]="[ 'First', 'Second', 'Third']" [currentSection]="currentSection" (scrollToSection)="scrollToSection($event)">
+  <app-banner [sections]="sectionsConf" [currentSection]="currentSection" (scrollToSection)="scrollToSection($event)">
   </app-banner>
-  <app-section sectionTitle="First" threshold="0.75" (visibilityChanged)="onVisibilityChanged($event)">
+  <app-section [sectionTitle]="1" [thresholdzzz]="0.75" (visibilityChanged)="onVisibilityChanged($event)">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.
       Perferendis, veniam. Quis eaque suscipit rem enim laborum quaerat atque rerum, maiores reprehenderit.
     </div>
   </app-section>
-  <app-section sectionTitle="Second" threshold="0.75" (visibilityChanged)="onVisibilityChanged($event)">
+  <app-section [sectionTitle]="2" [thresholdzzz]="0.75" (visibilityChanged)="onVisibilityChanged($event)">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.
       Perferendis, veniam. Quis eaque suscipit rem enim laborum quaerat atque rerum, maiores reprehenderit.
     </div>
   </app-section>
-  <app-section sectionTitle="Third" threshold="0.75" (visibilityChanged)="onVisibilityChanged($event)">
+  <app-section [sectionTitle]="3" [thresholdzzz]="0.75" (visibilityChanged)="onVisibilityChanged($event)">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.
       Perferendis, veniam. Quis eaque suscipit rem enim laborum quaerat atque rerum, maiores reprehenderit.

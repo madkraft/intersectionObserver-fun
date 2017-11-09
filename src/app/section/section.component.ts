@@ -17,20 +17,20 @@ import {
 })
 export class SectionComponent implements OnInit {
   @HostBinding("attr.class") class = "node";
-  @Input() sectionTitle: string;
-  @Input() threshold: number = 1;
+  @Input() sectionTitle: number;
+  @Input() thresholdzzz: number = 1;
   @Output() visibilityChanged: EventEmitter<any> = new EventEmitter();
 
   constructor(private el: ElementRef) {}
 
   ngOnInit() {
     const options = {
-      threshold: this.threshold
+      threshold: this.thresholdzzz
     };
 
     const io = new IntersectionObserver(entries => {
       let visible: boolean;
-      if (entries[0].intersectionRatio >= this.threshold) {
+      if (entries[0].intersectionRatio >= this.thresholdzzz) {
         visible = true;
       } else {
         visible = false;

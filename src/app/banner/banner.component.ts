@@ -17,7 +17,7 @@ import {
 })
 export class BannerComponent implements OnInit {
   @Input() currentSection: any;
-  @Input() sections: string[];
+  @Input() sections: any[];
   @Output() scrollToSection = new EventEmitter();
   @ViewChild("banner") bannerEl;
   @ViewChild("placeholder") placeholderEl;

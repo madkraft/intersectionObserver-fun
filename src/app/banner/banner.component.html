@@ -2,8 +2,8 @@
   <div #placeholder class="placeholder"></div>
   <div #banner class="banner">
     <ng-container *ngFor="let section of sections">
-      <button [class.active]="section===currentSection" (click)="onButtonClick(section)">
-        {{section}}
+      <button [class.active]="section.id===currentSection" (click)="onButtonClick(section)">
+        {{section.label}}
       </button>
     </ng-container>
   </div>
