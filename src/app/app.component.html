@@ -4,6 +4,8 @@
     quidem debitis perspiciatis laborum vel. Delectus saepe praesentium illum recusandae nulla optio minus voluptas?Aspernatur
     rem ea, nobis accusamus quisquam nostrum pariatur officia minus veniam itaque nihil sed similique voluptates quaerat
     dicta explicabo quidem in incidunt. Eaque nam doloribus voluptatibus iure tempora, cupiditate expedita.
+
+    <!-- <img appLazyLoad [src]="'http://fillmurray.com/200/300'" [alt]="'Bill Murray'"> -->
   </div>
   <app-banner [sections]="sectionsConf" [currentSection]="currentSection" (scrollToSection)="scrollToSection($event)">
   </app-banner>
@@ -11,18 +13,32 @@
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.
       Perferendis, veniam. Quis eaque suscipit rem enim laborum quaerat atque rerum, maiores reprehenderit.
+
+      <!-- <img appLazyLoad [src]="'http://fillmurray.com/300/300'" [alt]="Hello"> -->
     </div>
   </app-section>
   <app-section [sectionTitle]="2" [thresholdzzz]="0.75" (visibilityChanged)="onVisibilityChanged($event)">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.
       Perferendis, veniam. Quis eaque suscipit rem enim laborum quaerat atque rerum, maiores reprehenderit.
+
+      <!-- <img appLazyLoad [src]="'http://fillmurray.com/400/300'" [alt]="World"> -->
     </div>
   </app-section>
   <app-section [sectionTitle]="3" [thresholdzzz]="0.75" (visibilityChanged)="onVisibilityChanged($event)">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.
       Perferendis, veniam. Quis eaque suscipit rem enim laborum quaerat atque rerum, maiores reprehenderit.
+
+      <!-- <img appLazyLoad [src]="'http://fillmurray.com/500/300'" [alt]="again"> -->
     </div>
   </app-section>
+</div>
+
+<div class="card" *ngFor="let card of cards">
+  <div>{{card.text}}</div>
+  <div class="card-image">
+    <!-- <img src="http://via.placeholder.com/350x150" alt="kitten"> -->
+    <img appLazyLoad [src]="card.image" [alt]="card.alt">
+  </div>
 </div>

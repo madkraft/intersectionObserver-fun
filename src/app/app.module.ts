@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StickyDirective } from './sticky.directive';
 import { BannerComponent } from './banner/banner.component';
 import { SectionComponent } from './section/section.component';
+import { LazyLoadDirective } from './lazy-load.directive';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SectionComponent } from './section/section.component';
     AppComponent,
     StickyDirective,
     BannerComponent,
-    SectionComponent
+    SectionComponent,
+    LazyLoadDirective
   ],
   imports: [
     BrowserModule

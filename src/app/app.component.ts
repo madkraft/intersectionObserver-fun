@@ -10,18 +10,46 @@ export class AppComponent {
   currentSection: any;
   sectionsConf = [
     {
-      label: 'First',
+      label: "First",
       id: 1
     },
     {
-      label: 'Second',
+      label: "Second",
       id: 2
     },
     {
-      label: 'Third',
+      label: "Third",
       id: 3
     }
   ];
+
+  cards = [
+    {
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.",
+      image: "http://fillmurray.com/g/200/300",
+      alt: "one"
+    },
+    {
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.",
+      image: "http://fillmurray.com/g/300/300",
+      alt: "two"
+    },
+    {
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.",
+      image: "http://fillmurray.com/g/400/300",
+      alt: "three"
+    },
+    {
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum eos non maxime natus provident veritatis sequi.",
+      image: "http://fillmurray.com/g/500/300",
+      alt: "four"
+    }
+  ];
+
   @ViewChildren(SectionComponent) sections: any;
 
   onVisibilityChanged(event) {
